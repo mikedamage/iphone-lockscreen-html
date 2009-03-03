@@ -1,0 +1,11 @@
+h1. iPhone Lockscreen Scripts
+
+|*Author:*||Mike Green ("mike.is.green@gmail.com":mailto:mike.is.green@gmail.com)|
+|*URL:*||"http://mikedamage.github.com":http://mikedamage.github.com|
+|*License:*||MIT License|
+
+h2. About
+
+I'm starting this repo so I have somewhere to put the scripts I write for my unlocked iPhone.
+Most of them are meant to be run as Launchd jobs that render HTML files, which are then displayed in
+"Winterboard":http://www.saurik.com/id/9 themes.
