@@ -19,9 +19,10 @@ config = OpenStruct.new
 config.items		= 5
 config.details	= false
 config.links		= false
+config.verbose	= false
 
 opts = OptionParser.new
-opts.banner = "Usage: rss_checkr [-n NUMBER] [-dlh] <feed url>"
+opts.banner = "Usage: rss_checkr [-n NUMBER] [-dlvh] <feed url>"
 opts.on('-n', '--n-items NUMBER', 'Specify the number of items to display (default 5)') do |n|
 	config.items = n.to_i
 end
@@ -31,8 +32,19 @@ end
 opts.on('-l', '--links', 'Show links to full posts on the web') do 
 	config.links = true
 end
+opts.on('-v', '--verbose', 'Display process information as the feed is checked') do
+	config.verbose = true
+end
 opts.on_tail('-h', '--help', 'Displays usage information and command line options') do
 	puts opts
+	exit 0
 end
 
 opts.parse!(ARGV)
+
+if ARGV.any?
+	feed_url = ARGV.shift
+else
+	puts "You must supply a feed URL!"
+	exit 1
+end
