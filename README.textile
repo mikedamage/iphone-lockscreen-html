@@ -9,3 +9,7 @@ h2. About
 I'm starting this repo so I have somewhere to put the scripts I write for my unlocked iPhone.
 Most of them are meant to be run as Launchd jobs that render HTML files, which are then displayed in
 "Winterboard":http://www.saurik.com/id/9 themes.
+
+h3. Dependencies
+
+To run these on your iPhone, you first need an iPhone. With this dependency satisfied, you then need to jailbreak your iPhone. There's a wealth of information available on this topic and it's very easy to do. Then you need to use Cydia to install Ruby and Winterboard. Then you're all set!
