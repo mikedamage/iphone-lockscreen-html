@@ -7,6 +7,8 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>/var/root/Scripts/lockscreen-scripts/diskspace.rb</string>
+		<string>&gt;</string>
+		<string>/tmp/diskspace.html</string>
 	</array>
 	<key>StartInterval</key>
 	<integer>600</integer>
