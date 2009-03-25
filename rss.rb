@@ -77,9 +77,11 @@ __END__
 		ul {
 			padding-left:0;
 			list-style:none;
+			font-size:8px;
 		}
 		ol {
 			padding-left:0;
+			font-size:8px;
 		}
 	</style>
 </head>
