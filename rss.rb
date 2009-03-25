@@ -29,8 +29,9 @@ defaults = {
 
 opts = OptionParser.new
 opts.banner = <<END
-RSS Reader Script
-by Mike Green
+Console RSS Reader Script
+===========================
+Copyright (C) 2009 Mike Green, MIT Open Source License
 
 Usage: #{File.basename(__FILE__)} [-n | --number NUM] [-dlh] feed_url
 END
