@@ -28,6 +28,12 @@ defaults = {
 @config = OpenStruct.new(defaults)
 
 opts = OptionParser.new
+opts.banner = <<END
+RSS Reader Script
+by Mike Green
+
+Usage: #{File.basename(__FILE__)} [-n | --number NUM] [-dlh] feed_url
+END
 opts.on('-n', '--number NUMBER', 'How many headlines to show (5 by default)') do |n|
 	@config.items = n.to_i
 end
