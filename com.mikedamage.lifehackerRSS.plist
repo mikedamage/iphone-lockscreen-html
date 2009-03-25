@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.mikedamage.LockScreenDiskSpace</string>
+	<string>com.mikedamage.lifehackerRSS</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/var/root/Scripts/lockscreen-scripts/diskspace.rb</string>
+		<string>/usr/local/bin/rss</string>
+		<string>-n 3</string>
+		<string>http://lifehacker.com/index.xml</string>
 		<string>&gt;</string>
-		<string>/tmp/diskspace.html</string>
+		<string>/tmp/lifehacker.html</string>
 	</array>
 	<key>StartInterval</key>
-	<integer>600</integer>
+	<integer>300</integer>
 </dict>
 </plist>
